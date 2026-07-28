@@ -1,0 +1,9 @@
+node_modules
+.next
+contract/target
+coverage
+.git
+.env
+.DS_Store
+npm-debug.log*
+README.md
