@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --color-forest: #123522;
+  --color-moss: #4f7b45;
+  --color-leaf: #8fb35b;
+  --color-soil: #7b4e2d;
+  --color-bark: #3f2a1d;
+  --color-amber: #e5a83a;
+  --color-cream: #f7f0df;
+  --color-mist: #e4ead6;
+  --color-clay: #b66f45;
+  --background: var(--color-cream);
+  --foreground: var(--color-forest);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+}
+
+::selection {
+  background: var(--color-amber);
+  color: var(--color-forest);
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+.earth-panel {
+  border: 1px solid rgba(18, 53, 34, 0.14);
+  background:
+    linear-gradient(135deg, rgba(255, 251, 235, 0.84), rgba(228, 234, 214, 0.72)),
+    radial-gradient(circle at 10% 0%, rgba(229, 168, 58, 0.2), transparent 32%);
+  box-shadow: 0 24px 80px rgba(63, 42, 29, 0.12);
+}
+
+.bark-line {
+  background-image:
+    linear-gradient(90deg, rgba(18, 53, 34, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(18, 53, 34, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  box-shadow: 0 0 0 3px rgba(229, 168, 58, 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
