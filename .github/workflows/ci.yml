@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  frontend:
+    name: Frontend type check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install frontend deps
+        run: npm ci
+
+      - name: Lint frontend
+        run: npm run lint
+
+      - name: Type check frontend
+        run: npm run typecheck
+
+      - name: Test frontend helpers
+        run: npm test
+
+      - name: Build frontend
+        run: npm run build
+
+  contract:
+    name: Contract build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32v1-none
+
+      - name: Format check
+        run: cargo fmt --check --manifest-path contract/Cargo.toml
+
+      - name: Build contract
+        run: cargo build --manifest-path contract/Cargo.toml --target wasm32v1-none --release
