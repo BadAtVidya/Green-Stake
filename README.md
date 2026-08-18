@@ -3,8 +3,8 @@
 ## Quick Links
 - Live site: https://green-stake-mocha.vercel.app/
 - Demo video: https://drive.google.com/file/d/1bWOhtKgSNgE365eaci0XivH2lps4qiAB/view?usp=sharing
-- Feedback export: add your published spreadsheet link here
-- Google Form source: add your published form link here
+- Feedback export: https://docs.google.com/spreadsheets/d/1MDby4dliZwYo0BuOHJUpTFf_ptXqmUO_t40QN-325uo/edit?usp=sharing
+- Google Form source: https://docs.google.com/forms/d/e/1FAIpQLSdf6ctXfgr0eXSk8chIG-LJocF_xmb8K92kMOMWwt7nlZ4WoQ/viewform
 
 ## What This Is
 GreenStake is a tree-plantation verification app built with Next.js, Soroban, and Stellar testnet. Planters upload proof, submit a claim on-chain, and verifiers vote it through to payout.
@@ -38,7 +38,9 @@ Main functions:
 ## Feedback Export
 Form responses were collected in Google Form and exported for review.
 
-Add your public spreadsheet link in `README.md` after manual export.
+Spreadsheet: https://docs.google.com/spreadsheets/d/1MDby4dliZwYo0BuOHJUpTFf_ptXqmUO_t40QN-325uo/edit?usp=sharing
+
+Form: https://docs.google.com/forms/d/e/1FAIpQLSdf6ctXfgr0eXSk8chIG-LJocF_xmb8K92kMOMWwt7nlZ4WoQ/viewform
 
 ## Users Onboarded
 | User ID | Name | Email | Wallet Address | Feedback Summary |
