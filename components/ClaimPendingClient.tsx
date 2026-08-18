@@ -153,6 +153,9 @@ export function ClaimPendingClient({ id }: { id: number }) {
                     Save receipt
                   </button>
                 </div>
+                <p className="mt-3 text-sm text-[rgba(18,53,34,0.68)]">
+                  Status updates land in dashboard. Refresh there to check again.
+                </p>
               </div>
             </div>
           </Reveal>
