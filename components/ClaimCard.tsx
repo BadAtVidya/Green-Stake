@@ -46,6 +46,7 @@ export function ClaimCard({ claim }: { claim: Claim }) {
             </p>
           </div>
         </div>
+        <p className="mt-4 text-sm text-[rgba(18,53,34,0.58)]">Open for receipt and status details.</p>
       </div>
     </Link>
   );
