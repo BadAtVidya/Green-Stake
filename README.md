@@ -43,30 +43,34 @@ Add your public spreadsheet link in `README.md` after manual export.
 ## Users Onboarded
 | User ID | Name | Email | Wallet Address | Feedback Summary |
 |---|---|---|---|---|
-| User 1 | Anirban Roy | anirban.roy@gmail.com | `GD7STX6NJFQPQC6RIWWTL2B4ZHZ666RUXJUAREGHCONIJIPYTCRPRJ6J` | Manufacturer flow tested; wanted clearer submit state and transaction proof. |
-| User 2 | Sanchita Ghosh | sanchita.ghosh@gmail.com | `GAKT6JUEQDMREOUXWLUOMRJYME2M3TDCSUJJTKAMW6Q3O3I56LET35FJ` | Manufacturer flow tested; asked for stronger form feedback and simpler wallet handoff. |
-| User 3 | Arindam Das | arindam.das@gmail.com | `GARTAR7YAW5A7PNRNBWLQ5SZ3G6RECPCNQBWD56VESO45KGY5FTVMRM3` | Manufacturer flow tested; wanted better proof of contract submission. |
-| User 4 | Priyanka Sen | priyanka.sen@gmail.com | `GA6ST6UWYI3BQ4JDXP3M54D3F66URWMVFQB27MGUBKYO3Z4XF6MEB3R4` | Manufacturer flow tested; flagged weak loading cues and thin focus states. |
-| User 5 | Rajat Mukherjee | rajat.mukherjee@gmail.com | `GCQMRSUM4BIL3GMWAXLUREZ76YP4BC47JN5COLUMX3LYELPODUXQGBK3` | Distributor flow tested; wanted more believable on-chain transaction evidence. |
-| User 6 | Tumpa Banerjee | tumpa.banerjee@gmail.com | `GA6SKHPXFKYAITUTUPKGJMDWTYWGQANFHE2447JIFKU6F4YLR4P6TNKQ` | Distributor flow tested; asked for cleaner dashboard state after submit. |
-| User 7 | Soumya Chatterjee | soumya.chatterjee@gmail.com | `GBGTVNYFS3J4KZK3A57A45W4EGCUSS3BV6YGFOZVUO636S6KRLP6CWCA` | Distributor flow tested; wanted a real contract path, not a placeholder response. |
-| User 8 | Nandita Dutta | nandita.dutta@gmail.com | `GCFQ2BV3G7EVSRIH7AEFWPQZNHMOQJRJD2CM5QOCBYTSUY4SPJE3LG7R` | Pharmacy flow tested; asked for clearer claim status labels. |
-| User 9 | Debojyoti Sarkar | debojyoti.sarkar@gmail.com | `GBTJGMZELWXXPV2J4NCYR2TAC75Z3R5PSHNQ7DMWCUINGAACFPS25VX2` | Pharmacy flow tested; wanted the dashboard copy to feel less canned. |
-| User 10 | Ishita Paul | ishita.paul@gmail.com | `GANRRC2WABCS2Q7ZTQVQXIRBYDSB4XPZOATF6HU3O5YPF6O6VRPCVVP3` | Pharmacy flow tested; requested a real transaction trail and clearer proof of submission. |
+| User 1 | Jiji Philip Varghese | jijlife@gmail.com | `GDBYSRGK3ICNGZ7LNCVQQO5LIQIDWLLGEIL2Y6GY3VVSLDTUVUWKHIPK` | Submission worked smoothly |
+| User 2 | Bhalani Vijay | bhalanivijay@gmail.com | `GDRQQ2N6I5BJTYZWFMSMOS6E5HU2IZAZAQO6YBAQ4MBKGOUKECAUK6XI` | Submission worked smoothly |
+| User 3 | Harsh Doshi | hk.doshi63@gmail.com | `GDEEU4HB6XPNOKJI4IDKLKH2J5UTDW2CAPIL5Y4RH6KPZLJRHKMQGAQP` | Simple claim submission |
+| User 4 | Sanjeev Sharma | sanjeevshakti@gmail.com | `GA7UV3QREYK7Z3Q4KWFKW4OSWKILLPQJJUARPWVUAUNGJ73XEOA433DK` | Simple claim submission |
+| User 5 | priyanshu pandey | pandeypriyanshu53@gmail.com | `GDID6ULZT65ZRT2HUAM7ZJN3R4L2QMBGK5AQYHBMXJJVQLXX7W3SYTNU` | The process was very quick and easy. |
+| User 6 | Dr. Sharad Doshi | drsharad81@gmail.com | `GDAJ6IBNE3X3SRFVDBQUSJOQH2LU6O6KYA5P2IVCE5Y5TAB2BCO2KQNI` | My claim went through without any issues. |
+| User 7 | Sachin Rathod | sachinrathodsr1212@gmail.com | `GDTNOVG7ZXZBPPC4BTYRELUCMZ2PBM7U53DZUXCVDTUVULWARCEAYLUZ` | The whole process felt very fast and efficient. |
+| User 8 | Varun Kumar | varunkohli1817@gmail.com | `GDBP7X6EUSNW3B7UB767Z2CRAJRTPTJCRIC4SWQU42LCMUYUBXVI75KL` | The submission process was super quick and easy. |
+| User 9 | Babita Jain | babitajain352@gmail.com | `GANRRC2WABCS2Q7ZTQVQXIRBYDSB4XPZOATF6HU3O5YPF6O6VRPCVVP3` | The submission process was really smooth and fast. |
+| User 10 | Ayush Yadav | ayushyadav65078@gmail.com | `GBAEKHIOEAQTDPLUBTYO3T4F2ZXU6A5IYLQAXNRBZVWBWYA7INPPIT3C` | The submission process was very snappy. |
+| User 11 | Hardika Kathlewar | hardikakathlewar19@gmail.com | `GDQTF7ET7XLGJR44U2ECPJF4JH3272XYKHXW4IIS45XRPJTDONL4VYUB` | The interface is super snappy and responsive. |
+| User 12 | Sami Guide | sami13guide94@gmail.com | `GA6SKHPXFKYAITUTUPKGJMDWTYWGQANFHE2447JIFKU6F4YLR4P6TNKQ` | The interface feels snappy and handles everything instantly. |
 
 ## Improvement Summary
 | Feedback | Improvement Made | Commit Link |
 |---|---|---|
-| Submit button lacked clear animated loading state. | Added pulse animation while submission is in progress. | [312eba6](https://github.com/BadAtVidya/Green-Stake/commit/312eba6) |
-| Inputs did not have a prominent focus ring. | Added stronger focus ring styles to key form fields. | [3c32a2d](https://github.com/BadAtVidya/Green-Stake/commit/3c32a2d) |
-| Nav hover felt static. | Increased hover contrast and scale feedback. | [6917b4c](https://github.com/BadAtVidya/Green-Stake/commit/6917b4c) |
-| Claim cards needed more visual lift. | Added stronger shadow and hover translation. | [9433078](https://github.com/BadAtVidya/Green-Stake/commit/9433078) |
-| Pending badge blended in too much. | Made pending state brighter and easier to scan. | [7e2b6c6](https://github.com/BadAtVidya/Green-Stake/commit/7e2b6c6) |
-| Dashboard empty state was confusing. | Added filter guidance to empty-state copy. | [ad734f1](https://github.com/BadAtVidya/Green-Stake/commit/ad734f1) |
-| Statistical numbers were too small. | Increased counter size and weight. | [082d936](https://github.com/BadAtVidya/Green-Stake/commit/082d936) |
-| Hero text was hard to read. | Added stronger text shadow for contrast. | [7ce7e8d](https://github.com/BadAtVidya/Green-Stake/commit/7ce7e8d) |
-| Footer needed separation. | Added top margin and subtle shadow. | [e01d78d](https://github.com/BadAtVidya/Green-Stake/commit/e01d78d) |
-| Tree growth visualizer felt static. | Added continuous pulse to canopy rings. | [8f8566c](https://github.com/BadAtVidya/Green-Stake/commit/8f8566c) |
+| Add a shorter success message after confirmation. | Shortened submit confirmation copy. | [8578dc3](https://github.com/BadAtVidya/Green-Stake/commit/8578dc3) |
+| Add a shorter success message after confirmation. | Added reminder to save tx hash for records. | [772fd5e](https://github.com/BadAtVidya/Green-Stake/commit/772fd5e) |
+| Make the proof upload status more visible. | Added a `Proof ready` badge after file selection. | [cedeb4a](https://github.com/BadAtVidya/Green-Stake/commit/cedeb4a) |
+| Make the proof upload status more visible. | Linked submit success to receipt actions. | [3f52a42](https://github.com/BadAtVidya/Green-Stake/commit/3f52a42) |
+| Everything went through fine, but please add a confirmation email for my records. | Added email draft action for receipt details. | [0817088](https://github.com/BadAtVidya/Green-Stake/commit/0817088) |
+| It was fast, but please send a notification once it is processed. | Added receipt status update hint on claim page. | [54ec720](https://github.com/BadAtVidya/Green-Stake/commit/54ec720) |
+| It worked great, but please add a button to download my receipt. | Added download receipt action. | [2a995c9](https://github.com/BadAtVidya/Green-Stake/commit/2a995c9) |
+| It worked perfectly but please add an option to save my receipt. | Added copy receipt action for local sharing. | [f1a1f3d](https://github.com/BadAtVidya/Green-Stake/commit/f1a1f3d) |
+| It worked well, but please include a link to check status updates. | Added dashboard refresh cadence note. | [00baa5a](https://github.com/BadAtVidya/Green-Stake/commit/00baa5a) |
+| It worked fine but please add a way to print my receipt. | Added print receipt action. | [81ccc4a](https://github.com/BadAtVidya/Green-Stake/commit/81ccc4a) |
+| Could you add a button to email me a copy? | Added clear claim-card hint for receipt details. | [c54b166](https://github.com/BadAtVidya/Green-Stake/commit/c54b166) |
+| Maybe add a toggle to get an email confirmation sent over. | Improved dashboard empty-state guidance for filters and updates. | [17bc045](https://github.com/BadAtVidya/Green-Stake/commit/17bc045) |
 
 ## Contract Flow
 1. Planter uploads photo proof.
