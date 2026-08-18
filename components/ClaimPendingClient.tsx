@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo } from "react";
-import { ArrowLeft, Printer } from "lucide-react";
+import { ArrowLeft, Copy, Printer } from "lucide-react";
 import { ClaimPhotoFrame } from "@/components/ClaimPhotoFrame";
 import { Reveal } from "@/components/Reveal";
 import { StatusBadge } from "@/components/StatusBadge";
@@ -110,14 +110,28 @@ export function ClaimPendingClient({ id }: { id: number }) {
                 <p className="text-sm font-bold uppercase tracking-[0.16em] text-[var(--color-soil)]">
                   Receipt
                 </p>
-                <button
-                  type="button"
-                  onClick={() => window.print()}
-                  className="focus-ring mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-amber)] px-5 py-3 text-sm font-bold text-[var(--color-forest)]"
-                >
-                  <Printer size={16} />
-                  Print receipt
-                </button>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <button
+                    type="button"
+                    onClick={() => window.print()}
+                    className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-amber)] px-5 py-3 text-sm font-bold text-[var(--color-forest)]"
+                  >
+                    <Printer size={16} />
+                    Print receipt
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      void navigator.clipboard.writeText(
+                        `Claim ${claim.id}\nGrid cell: ${claim.gridCell}\nTx hash: ${claim.txHash}\nStake: ${claim.stakeAmount} XLM`,
+                      )
+                    }
+                    className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-[rgba(18,53,34,0.08)] px-5 py-3 text-sm font-bold text-[var(--color-forest)]"
+                  >
+                    <Copy size={16} />
+                    Copy details
+                  </button>
+                </div>
               </div>
             </div>
           </Reveal>
