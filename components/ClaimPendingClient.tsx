@@ -149,8 +149,21 @@ export function ClaimPendingClient({ id }: { id: number }) {
                       URL.revokeObjectURL(url);
                     }}
                     className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-[rgba(18,53,34,0.08)] px-5 py-3 text-sm font-bold text-[var(--color-forest)]"
-                  >
+                    >
                     Save receipt
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const subject = encodeURIComponent(`GreenStake receipt for claim ${claim.id}`);
+                      const body = encodeURIComponent(
+                        `Claim ${claim.id}\nGrid cell: ${claim.gridCell}\nTx hash: ${claim.txHash}\nStake: ${claim.stakeAmount} XLM`,
+                      );
+                      window.location.href = `mailto:?subject=${subject}&body=${body}`;
+                    }}
+                    className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-[rgba(18,53,34,0.08)] px-5 py-3 text-sm font-bold text-[var(--color-forest)]"
+                  >
+                    Email copy
                   </button>
                 </div>
                 <p className="mt-3 text-sm text-[rgba(18,53,34,0.68)]">
