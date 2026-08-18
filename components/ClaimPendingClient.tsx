@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo } from "react";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Printer } from "lucide-react";
 import { ClaimPhotoFrame } from "@/components/ClaimPhotoFrame";
 import { Reveal } from "@/components/Reveal";
 import { StatusBadge } from "@/components/StatusBadge";
@@ -105,6 +105,19 @@ export function ClaimPendingClient({ id }: { id: number }) {
                     </div>
                   ))}
                 </div>
+              </div>
+              <div className="mt-8">
+                <p className="text-sm font-bold uppercase tracking-[0.16em] text-[var(--color-soil)]">
+                  Receipt
+                </p>
+                <button
+                  type="button"
+                  onClick={() => window.print()}
+                  className="focus-ring mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-amber)] px-5 py-3 text-sm font-bold text-[var(--color-forest)]"
+                >
+                  <Printer size={16} />
+                  Print receipt
+                </button>
               </div>
             </div>
           </Reveal>
