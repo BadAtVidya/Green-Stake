@@ -73,6 +73,9 @@ export function DashboardClient({
             Follow each planting proof from pending vote to paid reward. This
             dashboard now shows only claims returned by the deployed contract.
           </p>
+          <p className="mt-3 text-sm text-[rgba(18,53,34,0.54)]">
+            Claims refresh every few seconds, so status changes show up fast.
+          </p>
         </div>
         <div className="flex max-w-full gap-2 overflow-x-auto rounded-full bg-[rgba(18,53,34,0.07)] p-2">
           {filters.map((item) => (
