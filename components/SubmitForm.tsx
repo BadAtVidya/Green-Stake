@@ -159,9 +159,7 @@ export function SubmitForm() {
       });
 
       setStatus("sent");
-      setMessage(
-        `Wallet signed. Network accepted tx${submitPayload.hash ? `: ${submitPayload.hash}` : "."}`,
-      );
+      setMessage(submitPayload.hash ? `Claim submitted. Tx ${submitPayload.hash}` : "Claim submitted.");
     } catch (submitError) {
       setStatus("ready");
       setMessage(
@@ -284,7 +282,7 @@ export function SubmitForm() {
           : !isConnected
             ? "Connect wallet first"
           : status === "sent"
-            ? "Claim signed and submitted"
+            ? "Claim submitted"
             : "Sign and submit claim"}
       </button>
       {message ? (
