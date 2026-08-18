@@ -127,9 +127,30 @@ export function ClaimPendingClient({ id }: { id: number }) {
                       )
                     }
                     className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-[rgba(18,53,34,0.08)] px-5 py-3 text-sm font-bold text-[var(--color-forest)]"
-                  >
+                    >
                     <Copy size={16} />
                     Copy details
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const receipt = [
+                        `Claim ${claim.id}`,
+                        `Grid cell: ${claim.gridCell}`,
+                        `Tx hash: ${claim.txHash}`,
+                        `Stake: ${claim.stakeAmount} XLM`,
+                      ].join("\n");
+                      const blob = new Blob([receipt], { type: "text/plain;charset=utf-8" });
+                      const url = URL.createObjectURL(blob);
+                      const link = document.createElement("a");
+                      link.href = url;
+                      link.download = `greenstake-claim-${claim.id}.txt`;
+                      link.click();
+                      URL.revokeObjectURL(url);
+                    }}
+                    className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-[rgba(18,53,34,0.08)] px-5 py-3 text-sm font-bold text-[var(--color-forest)]"
+                  >
+                    Save receipt
                   </button>
                 </div>
               </div>
