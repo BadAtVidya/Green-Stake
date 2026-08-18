@@ -209,9 +209,14 @@ export function SubmitForm() {
               onChange={(event) => void selectPhoto(event.target.files?.[0] ?? null)}
               className="focus-ring w-full rounded-[8px] text-sm"
             />
-            <p className="mt-3 text-sm text-[rgba(18,53,34,0.62)]">
-              {photo ? photo.name : "Upload a clear sapling photo from the planting site."}
-            </p>
+            <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-[rgba(18,53,34,0.62)]">
+              <p>{photo ? photo.name : "Upload a clear sapling photo from the planting site."}</p>
+              {photo ? (
+                <span className="rounded-full bg-[rgba(18,53,34,0.1)] px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[var(--color-forest)]">
+                  Proof ready
+                </span>
+              ) : null}
+            </div>
           </div>
         </label>
 
