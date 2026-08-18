@@ -299,6 +299,11 @@ export function SubmitForm() {
           {message}
         </p>
       ) : null}
+      {status === "sent" ? (
+        <p className="mt-3 text-sm text-[rgba(18,53,34,0.68)]">
+          Need a copy? Open claim details for print, save, or email actions.
+        </p>
+      ) : null}
     </form>
   );
 }
