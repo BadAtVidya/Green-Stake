@@ -128,7 +128,7 @@ export function DashboardClient({
             <p className="mt-3 max-w-2xl leading-7 text-[rgba(18,53,34,0.68)]">
               Submit a claim and confirm the wallet transaction, then refresh
               this dashboard after the contract stores it. {error ? `Latest read: ${error}` : ""}
-              {visible.length === 0 && claims.length > 0 && " (Try adjusting your filters to see more claims)"}
+              {visible.length === 0 && claims.length > 0 && " Try another filter to surface older claims."}
             </p>
           </motion.div>
         )}
