@@ -159,7 +159,11 @@ export function SubmitForm() {
       });
 
       setStatus("sent");
-      setMessage(submitPayload.hash ? `Claim submitted. Tx ${submitPayload.hash}` : "Claim submitted.");
+      setMessage(
+        submitPayload.hash
+          ? `Claim submitted. Tx ${submitPayload.hash}. Save it for records.`
+          : "Claim submitted. Save the tx hash for records.",
+      );
     } catch (submitError) {
       setStatus("ready");
       setMessage(
