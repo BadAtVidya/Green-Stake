@@ -5,6 +5,7 @@
 - Demo video: https://drive.google.com/file/d/1bWOhtKgSNgE365eaci0XivH2lps4qiAB/view?usp=sharing
 - Feedback export: https://docs.google.com/spreadsheets/d/1MDby4dliZwYo0BuOHJUpTFf_ptXqmUO_t40QN-325uo/edit?usp=sharing
 - Google Form source: https://docs.google.com/forms/d/e/1FAIpQLSdf6ctXfgr0eXSk8chIG-LJocF_xmb8K92kMOMWwt7nlZ4WoQ/viewform
+- PPT Link - https://docs.google.com/presentation/d/1aXcVWtEIuYQ3jzmMg-uq4BRNS9Q5XQrd3Abq9DaLrlc/edit?usp=sharing
 
 ## What This Is
 GreenStake is a tree-plantation verification app built with Next.js, Soroban, and Stellar testnet. Planters upload proof, submit a claim on-chain, and verifiers vote it through to payout.
