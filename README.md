@@ -5,7 +5,24 @@
 - Demo video: https://drive.google.com/file/d/1bWOhtKgSNgE365eaci0XivH2lps4qiAB/view?usp=sharing
 - Feedback export: https://docs.google.com/spreadsheets/d/1MDby4dliZwYo0BuOHJUpTFf_ptXqmUO_t40QN-325uo/edit?usp=sharing
 - Google Form source: https://docs.google.com/forms/d/e/1FAIpQLSdf6ctXfgr0eXSk8chIG-LJocF_xmb8K92kMOMWwt7nlZ4WoQ/viewform
-- PPT Link - https://docs.google.com/presentation/d/1aXcVWtEIuYQ3jzmMg-uq4BRNS9Q5XQrd3Abq9DaLrlc/edit?usp=sharing
+- Pitch deck: https://docs.google.com/presentation/d/1aXcVWtEIuYQ3jzmMg-uq4BRNS9Q5XQrd3Abq9DaLrlc/edit?usp=sharing
+- Testnet contract explorer: https://stellar.expert/explorer/testnet/contract/CAAWZAJZ6HNZ7VQTPUT6M6N4SKOAVGW5V7NO6Y5B4LHF5Q7CJST5G5TG
+
+## Level 5 Submission Evidence
+
+| Requirement | Evidence/status |
+|---|---|
+| Public GitHub repository | [BadAtVidya/Green-Stake](https://github.com/BadAtVidya/Green-Stake) |
+| Live deployed application | [green-stake-mocha.vercel.app](https://green-stake-mocha.vercel.app/) |
+| Google Form: name, email, wallet, rating, feedback | [Open form](https://docs.google.com/forms/d/e/1FAIpQLSdf6ctXfgr0eXSk8chIG-LJocF_xmb8K92kMOMWwt7nlZ4WoQ/viewform) |
+| Exported Excel-compatible feedback sheet | [Open export](https://docs.google.com/spreadsheets/d/1MDby4dliZwYo0BuOHJUpTFf_ptXqmUO_t40QN-325uo/edit?usp=sharing) |
+| Pitch deck | [Open deck](https://docs.google.com/presentation/d/1aXcVWtEIuYQ3jzmMg-uq4BRNS9Q5XQrd3Abq9DaLrlc/edit?usp=sharing) |
+| Full product demo | [Watch demo](https://drive.google.com/file/d/1bWOhtKgSNgE365eaci0XivH2lps4qiAB/view?usp=sharing) |
+| Meaningful commit history | 28 commits before this README update; [full history](https://github.com/BadAtVidya/Green-Stake/commits/main) |
+| 50 testnet users | **Complete:** response sheet contains details for 50 onboarded testnet users. |
+| Real transaction activity and analytics proof | **Pending:** attach transaction hashes/screenshots or public analytics export. Contract activity can be checked in [Stellar Expert](https://stellar.expert/explorer/testnet/contract/CAAWZAJZ6HNZ7VQTPUT6M6N4SKOAVGW5V7NO6Y5B4LHF5Q7CJST5G5TG). |
+
+The form and export contain personal information. Use sheet permissions and share reviewer access only; do not duplicate respondent data in public screenshots.
 
 ## What This Is
 GreenStake is a tree-plantation verification app built with Next.js, Soroban, and Stellar testnet. Planters upload proof, submit a claim on-chain, and verifiers vote it through to payout.
@@ -43,7 +60,9 @@ Spreadsheet: https://docs.google.com/spreadsheets/d/1MDby4dliZwYo0BuOHJUpTFf_ptX
 
 Form: https://docs.google.com/forms/d/e/1FAIpQLSdf6ctXfgr0eXSk8chIG-LJocF_xmb8K92kMOMWwt7nlZ4WoQ/viewform
 
-## Users Onboarded
+## Users Onboarded and Feedback
+
+The linked response export contains details for 50 onboarded testnet users. Twelve representative responses are shown below; full name, email, wallet, rating, and feedback records remain in linked sheet.
 | User ID | Name | Email | Wallet Address | Feedback Summary |
 |---|---|---|---|---|
 | User 1 | Jiji Philip Varghese | jijlife@gmail.com | `GDBYSRGK3ICNGZ7LNCVQQO5LIQIDWLLGEIL2Y6GY3VVSLDTUVUWKHIPK` | Submission worked smoothly |
@@ -74,6 +93,30 @@ Form: https://docs.google.com/forms/d/e/1FAIpQLSdf6ctXfgr0eXSk8chIG-LJocF_xmb8K9
 | It worked fine but please add a way to print my receipt. | Added print receipt action. | [81ccc4a](https://github.com/BadAtVidya/Green-Stake/commit/81ccc4a) |
 | Could you add a button to email me a copy? | Added clear claim-card hint for receipt details. | [c54b166](https://github.com/BadAtVidya/Green-Stake/commit/c54b166) |
 | Maybe add a toggle to get an email confirmation sent over. | Improved dashboard empty-state guidance for filters and updates. | [17bc045](https://github.com/BadAtVidya/Green-Stake/commit/17bc045) |
+
+## Product Iteration Plan
+
+Feedback already drove receipt actions, clearer proof-upload state, shorter confirmation copy, status guidance, and dashboard empty-state improvements. Next phase:
+
+1. Maintain 50+ distinct testnet users through the form; deduplicate wallet addresses and record each successful transaction hash in the export.
+2. Add onboarding analytics: wallet-connect completion, proof-upload completion, signed transaction, confirmed transaction, and repeat dashboard visit.
+3. Improve retention with claim-status notifications, verifier reminders, and a guided first-claim walkthrough.
+4. Improve stability with retry-safe transaction polling, clearer RPC errors, upload size validation, and automated end-to-end smoke coverage.
+5. Publish weekly user-growth, transaction, and conversion snapshots alongside updated feedback analysis.
+
+Implementation links: [receipt actions](https://github.com/BadAtVidya/Green-Stake/commits/main?query=receipt), [proof-ready state](https://github.com/BadAtVidya/Green-Stake/commit/cedeb4a), [dashboard UX](https://github.com/BadAtVidya/Green-Stake/commit/17bc045). Add one commit link beside each future improvement before resubmission.
+
+## Pitch Coverage
+
+The linked deck covers required Level 5 presentation topics:
+
+- Problem: plantation claims lack transparent, verifiable evidence.
+- Solution: IPFS proof plus Soroban claim, voting, payout, refund, and expiry flow.
+- Market opportunity: climate-tech verification, restoration programs, NGOs, and community-led planting networks.
+- Architecture: Next.js frontend, Stellar Wallets Kit, Soroban contract, Stellar testnet RPC, Pinata/IPFS, and Vercel deployment.
+- Growth strategy: form-led onboarding, community/verifier loops, feedback-based iteration, and measurable funnel analytics.
+- Roadmap: more verifiers, notification automation, analytics, production network readiness, and partner pilots.
+
 
 ## Contract Flow
 1. Planter uploads photo proof.
